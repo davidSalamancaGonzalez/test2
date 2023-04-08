@@ -1,0 +1,16 @@
+<div class="card-container d-flex mb-3">
+  <div class="card-general d-flex flex-column p-4">
+    <button class="btn col-1" (click)="erase(product.name)">X</button>
+    <div class="pt-0 row mx-auto my-auto align-items-center d-flex">
+      <img [src]="product.image" alt="badge image"  class="img"/>
+    </div>
+
+    <div class="row">
+      <p class="title text-center">{{product.name}}</p>
+
+    </div>
+
+
+    <button class="but-details mx-auto" (click)="goTo(product.id)">Details</button>
+  </div>
+</div>

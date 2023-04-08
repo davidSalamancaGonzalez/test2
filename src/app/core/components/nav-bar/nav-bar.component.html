@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid d-flex">
+    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" style="width: 120px;" alt=""></a>
+    <button
+      class="navbar-toggler align-items-center"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto d-flex" *ngFor="let button of buttons">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" [routerLink]="button.link">
+            {{ button.name | translate}}
+          </a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center">
+
+        <select class="text-center form-select language-selector"
+          (change)="changeLang(option.value)"
+          #option>
+
+          <option class="py-2" value="en">English</option>
+          <option class="py-2" value="es">Spanish</option>
+        </select>
+
+        <div class="ms-md-2">
+          <span><img [src]="icon" alt="icon" class="icon" /></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>

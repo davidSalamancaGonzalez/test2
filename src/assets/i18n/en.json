@@ -1,0 +1,24 @@
+{
+  "header": {
+    "menulabel1": "Home",
+    "menulabel2": "Farmer goods",
+    "menulabel3": "Trucks",
+    "language": "Language"
+  },
+  "404": {
+    "title": "Look like you're lost",
+    "text": "The page you are looking for not avaible!",
+    "button": "Go to Home"
+  },
+  "details": {
+    "Farmer": "Farmer name:",
+    "Name": "Name",
+    "Type" : "Type",
+    "Origin": "Origin",
+    "Ripen" : "Ripenning time",
+    "Price": "Price x kg"
+  },
+
+  "test": "test english",
+  "Back": "Back"
+}
