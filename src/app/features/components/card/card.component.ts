@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Hortaliza } from '../../models/goods';
+
 import { DataService } from '../../services/data.service';
 import { Router } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  @Input() product!: Hortaliza;
+  @Input() product!: any;
 
   constructor(private data: DataService, private router : Router) {}
 
@@ -17,8 +17,13 @@ export class CardComponent {
     this.data.deleteProduct(product);
   }
 
-  goTo(id: number) {
+  goTo(product : any, id: number) {
 
-    this.router.navigate(['goods/details', id.toString()]);
+    if(product.truck) {
+      this.router.navigate(['trucks/details', id.toString()]);
+    } else {
+      this.router.navigate(['goods/details', id.toString()]);
+    }
+
   }
 }

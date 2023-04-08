@@ -1,4 +1,6 @@
  export interface Trucks {
+  truck:                      boolean;
+  id:                        number;
   image:                      string;
   brand:                      string;
   model:                      string;

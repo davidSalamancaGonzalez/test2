@@ -18,6 +18,15 @@
     "Ripen" : "Ripenning time",
     "Price": "Price x kg"
   },
+  "trucks" :{
+    "brand": "Brand",
+    "model": "Model",
+    "power": "Power",
+    "capacity": "Capacity",
+    "year": "Year",
+    "driver": "Driver",
+    "location": "Location"
+  },
 
   "test": "test english",
   "Back": "Back"
