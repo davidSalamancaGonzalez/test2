@@ -1,1 +1,48 @@
-<p>details-trucks works!</p>
+<div
+  class="container-fluid d-flex justify-content-center align-items-center detail p-4"
+>
+  <div class="row">
+    <div class="col-12">
+      <div class="card-container d-flex mb-3">
+        <div class="card-general d-flex flex-column p-4">
+          <p class="title text-center">
+            {{ "trucks.driver" | translate }} {{ productData.driver_owner }}
+          </p>
+          <div class="pt-0 row mx-auto my-auto align-items-center d-flex">
+            <img
+              [src]="productData.image"
+              alt="badge image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="row mt-3">
+            <div class="col  mb-2">
+              <p class="paragraph">
+                {{ "trucks.brand" | translate }}: {{ productData.brand }}
+              </p>
+              <p class="paragraph">
+                {{ "trucks.model" | translate }}: {{ productData.model }}
+              </p>
+              <p class="paragraph">
+                {{ "trucks.power" | translate }}: {{ productData.power_in_cv }}
+              </p>
+              <p class="paragraph">
+                {{ "trucks.year" | translate }}:
+                {{ productData.year_of_manufacture }}
+              </p>
+              <p class="paragraph">
+                {{ "trucks.location" | translate }}:
+                {{ productData.location }}
+              </p>
+              <p class="paragraph">
+                {{ "trucks.capacity" | translate }}:
+                {{ productData.max_weight_supported_in_kg }}
+              </p>
+              <app-back-button ></app-back-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

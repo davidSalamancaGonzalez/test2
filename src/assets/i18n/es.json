@@ -19,6 +19,16 @@
     "Ripen" : "Tiempo maduración:",
     "Price": "Precio x kg"
   },
+  "trucks" :{
+    "brand": "Marca",
+    "model": "Modelo",
+    "power": "Potencia",
+    "capacity": "Capacidad",
+    "year": "Año",
+    "driver": "Conductor",
+    "location": "Ubicación"
+
+  },
 
   "test": "test spanish",
   "Back": "Volver"
