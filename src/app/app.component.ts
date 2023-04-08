@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exam1';
+
+footerData : string[] = ["D.Salamanca", "✈️ V.U. 2023", "david.slmnc@gmail.com"]
 }

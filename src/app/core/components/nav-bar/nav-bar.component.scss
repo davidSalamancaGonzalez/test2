@@ -1,0 +1,18 @@
+@import "src/styles.scss";
+
+.icon {
+  width: 34px;
+  opacity: 0.75;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.language-selector {
+  max-width: 150px;
+  height: 36px;
+}
+
+.navbar {
+  @include navBar(0.9rem, $headline, $background);
+}

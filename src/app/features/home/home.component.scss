@@ -1,0 +1,18 @@
+@import 'src/styles.scss';
+
+.background{
+  height: 100vh;
+  background-image: url(https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/12/tesla-semi-truck-2899996.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.title{
+@include titles(3rem, $button, 600);
+}
+
+.subtitle{
+@include titles(1rem, $button,400);
+}

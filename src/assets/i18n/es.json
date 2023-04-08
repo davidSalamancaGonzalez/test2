@@ -1,0 +1,25 @@
+{
+
+  "header" : {
+    "menulabel1" : "Inicio",
+    "menulabel2": "Mercancías",
+    "menulabel3": "Camiones",
+    "language" : "Idioma"
+  },
+  "404": {
+    "title": "Parece que te has perdido",
+    "text": "La página que buscas no está disponible o no existe.",
+    "button": "Volver al inicio"
+  },
+  "details": {
+    "Farmer": "Agricultor:",
+    "Name": "Nombre:",
+    "Type" :"Tipo:",
+    "Origin": "Origen:",
+    "Ripen" : "Tiempo maduración:",
+    "Price": "Precio x kg"
+  },
+
+  "test": "test spanish",
+  "Back": "Volver"
+}

@@ -1,1 +1,134 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/mdc-light-deeppurple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+// color palette https://www.happyhues.co/palettes/5
+
+//illustration
+
+$primary   : #f2f7f5;
+$secondary : #ffa8ba;
+$tertiary  : #fa5246;
+$highlight : #faae2b;
+$stroke    : #00332c;
+
+// Elements
+
+$background : #f2f7f5;
+$headline   : #00473e;
+$paragraph  : #00473e;
+$button     : #faae2b;
+$button-text: #00473e;
+
+// Fonts
+
+$nunitoSans: 'Nunito Sans', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5gU1EQVg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+}
+
+// Body
+
+:root {
+
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+}
+
+//Components
+
+@mixin navBar($size, $color, $color-back){
+  font-family: $nunitoSans;
+  font-weight: 700;
+  font-size: $size;
+  color: $color;
+  background-color: $color-back;
+  padding-left: 1.5rem;
+  & :hover {
+    color: $highlight;
+  }
+  & :active {
+    color: $tertiary ;
+  }
+
+  & .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+     border-color: transparent;
+     box-shadow: none;
+    }
+    &:active {
+      border-color: transparent;
+    }
+  }
+
+  & .nav-image:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+
+  & .language-selector{
+    color: $color;
+    background-color: $button;
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+     }
+     &:active {
+       border-color: transparent;
+     }
+
+  }
+}
+
+@mixin titles($size, $color, $weight) {
+  font-size: $size;
+  font-family: $nunitoSans;
+  font-weight: $weight;
+  color: $color;
+}
+
+
+@mixin button($color, $background-color, $hover-color) {
+  font-family: $nunitoSans;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color;
+  background-color: $background-color;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin paragraph($size, $color, $weight) {
+  font-size: $size;
+  font-family: $nunitoSans;
+  font-weight: $weight;
+  color: $color;
+}
